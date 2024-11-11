@@ -8,7 +8,7 @@ First 42 Project about creating a library.
 | `ft_isalpha` | Alphabetic character test. | ✅ |
 | `ft_isdigit` | Decimal-digit character test. | ✅ |
 | `ft_isalnum` | Alphanumeric character test. | ✅ |
-| `ft_isascii` | Test for ASCII character. | ❌ |
+| `ft_isascii` | Test for ASCII character. | ✅ |
 | `ft_isprint` | Check if the character is printable. | ❌ |
 | `ft_strlen`   | Find the length of the string. | ✅ |
 | `ft_memset`  | Write a byte to a byte string. | ❌ |
