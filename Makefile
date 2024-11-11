@@ -4,18 +4,18 @@ CC	= cc
 
 CFLAGS	= -Wall -Wextra -Werror
 
-CFILES	=  
+CFILES	=	ft_isalpha.c \
+		 	ft_strlen.c
 
-OBJS	= $(CFILES:%=%.o)
-
-$(NAME):
-	$(CC) $(CFLAGS) -c $(CFILES) -I./
-	ar -rc $(NAME) $(OBJS)
+OBJS	= $(CFILES:.c=.o)
 
 all: $(NAME)
 
+$(NAME): $(OBJS)
+	ar rc $(NAME) $(OBJS)
+
 clean:
-	rm -f $(NAME) $(OBJS)
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
