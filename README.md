@@ -30,45 +30,33 @@ First 42 Project about creating a library.
 | `ft_strdup`  | Save a copy of a string (with malloc). | ❌ |
 
 
-#### Manipulate strings:
-| Function | Description |
-| :- | :- |
-| `ft_substr`   | Extract substring from a string. |
-| `ft_strjoin`  | Concatenate two strings into a new string (with malloc). |
-| `ft_strtrim`  | Trim the beginning and end of the string with the specified characters. |
-| `ft_split`    | Split string, with specified character as delimiter, into an array of strings. |
-| `ft_strmapi`  | Create a new string by modifying the string with a specified function. |
-| `ft_striteri` | Iterates through a string, enabling character and index manipulation. |
+## ADDITIONAL
 
-#### Manipulate memory:
-| Function | Description |
-| :- | :- |
+| Function | Description | Done |
+| :- | :- | :-: |
+| `ft_substr`   | Extract substring from a string. | ❌ |
+| `ft_strjoin`  | Concatenate two strings into a new string (with malloc). | ❌ |
+| `ft_strtrim`  | Trim the beginning and end of the string with the specified characters. | ❌ |
+| `ft_split`    | Split string, with specified character as delimiter, into an array of strings. | ❌ |
+| `ft_itoa` | Convert integer to ASCII string. | ❌ |
+| `ft_strmapi`  | Create a new string by modifying the string with a specified function. | ❌ |
+| `ft_striteri` | Iterates through a string, enabling character and index manipulation. | ❌ |
+| `ft_putchar_fd` | Output a character to the given file. | ❌ |
+| `ft_putstr_fd`  | Output string to the given file. | ❌ |
+| `ft_putendl_fd` | Output string to given file with newline. | ❌ |
+| `ft_putnbr_fd`  | Output integer to the given file. | ❌ |
 
-#### Manipulate numbers:
-| Function | Description |
-| :- | :- |
-| `ft_itoa` | Convert integer to ASCII string. |
-
-#### Write to a file descriptor:
-| Function | Description |
-| :- | :- |
-| `ft_putchar_fd` | Output a character to the given file. |
-| `ft_putstr_fd`  | Output string to the given file. |
-| `ft_putendl_fd` | Output string to given file with newline. |
-| `ft_putnbr_fd`  | Output integer to the given file. |
 
 ## BONUS
-> The bonus functions in libft are focused on list manipulation and are worth an additional 25 towards the final grade. To achieve a **grade of 125**, **all 9 bonus functions and 34 mandatory functions** must be completed accurately.
 
-| Function | Description |
-| :- | :- |
-| `ft_lstnew`       | Create new list. |
-| `ft_lstadd_front` | Add a new element at the beginning of the list. |
-| `ft_lstadd_back`  | Add a new element at the end of the list. |
-| `ft_lstsize`      | Count elements of a list. |
-| `ft_lstlast`      | Find the last element of the list. |
-| `ft_lstdelone`    | Delete element from the list. |
-| `ft_lstclear`     | Delete the sequence of elements of the list from a starting point. |
-| `ft_lstiter`      | Apply function to the content of all list elements. |
-| `ft_lstmap`       | Apply function to the content of all list elements into a new list. |
-
+| Function | Description | Done |
+| :- | :- | :-: |
+| `ft_lstnew`       | Create new list. | ❌ |
+| `ft_lstadd_front` | Add a new element at the beginning of the list. | ❌ |
+| `ft_lstadd_back`  | Add a new element at the end of the list. | ❌ |
+| `ft_lstsize`      | Count elements of a list. | ❌ |
+| `ft_lstlast`      | Find the last element of the list. | ❌ |
+| `ft_lstdelone`    | Delete element from the list. | ❌ |
+| `ft_lstclear`     | Delete the sequence of elements of the list from a starting point. | ❌ |
+| `ft_lstiter`      | Apply function to the content of all list elements. | ❌ |
+| `ft_lstmap`       | Apply function to the content of all list elements into a new list. | ❌ |
