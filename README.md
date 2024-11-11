@@ -4,7 +4,7 @@ First 42 Project about creating a library.
 ## MANDATORY
 
 | Function | Description | Done |
-| :- | :- | :- |
+| :- | :- | :-: |
 | `ft_isalpha` | Alphabetic character test. | ❌ |
 | `ft_isdigit` | Decimal-digit character test. | ❌ |
 | `ft_isalnum` | Alphanumeric character test. | ❌ |
