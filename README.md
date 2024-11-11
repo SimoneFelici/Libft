@@ -26,6 +26,8 @@ First 42 Project about creating a library.
 | `ft_memcmp`  | Compare byte string. | ❌ |
 | `ft_strnstr`  | Locate a substring in a string (size-bounded) | ❌ |
 | `ft_atoi` | Convert the ASCII string to an integer. | ❌ |
+| `ft_calloc`  | Memory allocation. | ❌ |
+| `ft_strdup`  | Save a copy of a string (with malloc). | ❌ |
 
 
 #### Manipulate strings:
@@ -41,8 +43,6 @@ First 42 Project about creating a library.
 #### Manipulate memory:
 | Function | Description |
 | :- | :- |
-| `ft_calloc`  | Memory allocation. |
-| `ft_strdup`  | Save a copy of a string (with malloc). |
 
 #### Manipulate numbers:
 | Function | Description |
