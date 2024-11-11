@@ -4,8 +4,9 @@
 # include <unistd.h>
 
 // MANDATORY
-int		ft_isalpha(int c);
-size_t	ft_strlen(char *str);
+int  ft_isalpha(int c);
+int  ft_isdigit(int c);
+size_t  ft_strlen(char *str);
 
 
 #endif
