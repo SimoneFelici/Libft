@@ -6,7 +6,7 @@ First 42 Project about creating a library.
 | Function | Description | Done |
 | :- | :- | :-: |
 | `ft_isalpha` | Alphabetic character test. | ✅ |
-| `ft_isdigit` | Decimal-digit character test. | ❌ |
+| `ft_isdigit` | Decimal-digit character test. | ✅ |
 | `ft_isalnum` | Alphanumeric character test. | ❌ |
 | `ft_isascii` | Test for ASCII character. | ❌ |
 | `ft_isprint` | Check if the character is printable. | ❌ |
