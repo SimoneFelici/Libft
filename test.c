@@ -3,5 +3,5 @@
 
 int	main()
 {
-	printf("%d", ft_isdigit('9'));
+	printf("%d", ft_isalnum(' '));
 }
