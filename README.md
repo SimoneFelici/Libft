@@ -17,8 +17,8 @@ First 42 Project about creating a library.
 | `ft_memmove` | Copy byte string. | ❌ |
 | `ft_strlcpy`  | Size-bounded string copying. | ❌ |
 | `ft_strlcat`  | Size-bounded string concatenation. | ❌ |
-| `ft_toupper` | Lower case to upper case letter conversion. | ❌ |
-| `ft_tolower` | Upper case to lower case letter cisprintonversion. | ❌ |
+| `ft_toupper` | Lower case to upper case letter conversion. | ✅ |
+| `ft_tolower` | Upper case to lower case letter cisprintonversion. | ✅ |
 | `ft_strchr`   | Locate the character in the string (first occurrence). | ❌ |
 | `ft_strrchr`  | Locate the character in the string (last occurrence). | ❌ |
 | `ft_strncmp`  | Compare strings (size-bounded). | ❌ |

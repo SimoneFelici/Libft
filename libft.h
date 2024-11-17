@@ -9,8 +9,8 @@ int  ft_isdigit(int c);
 int  ft_isalnum(int c);
 int  ft_isascii(int c);
 int  ft_isprint(int c);
+int	ft_tolower(int c);
+int	ft_toupper(int c);
 size_t  ft_strlen(char *str);
-char	*ft_tolower(char *str);
-
 
 #endif
