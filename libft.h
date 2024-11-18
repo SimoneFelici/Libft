@@ -15,4 +15,7 @@ size_t  ft_strlen(const char *str);
 size_t	ft_strlcat(char *dest, const char *src, size_t  size);
 int ft_atoi(const char *str);
 
+// ADDITIONAL
+char *ft_itoa(int n);
+
 #endif
