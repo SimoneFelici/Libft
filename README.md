@@ -15,7 +15,7 @@ First 42 Project about creating a library.
 | `ft_bzero`   | Write zeroes to a byte string. | ❌ |
 | `ft_memcpy`  | Copy memory area. | ❌ |
 | `ft_memmove` | Copy byte string. | ❌ |
-| `ft_strlcpy`  | Size-bounded string copying. | ❌ |
+| `ft_strlcpy`  | Size-bounded string copying. | ✅ |
 | `ft_strlcat`  | Size-bounded string concatenation. | ✅ |
 | `ft_toupper` | Lower case to upper case letter conversion. | ✅ |
 | `ft_tolower` | Upper case to lower case letter cisprintonversion. | ✅ |
