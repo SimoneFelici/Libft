@@ -16,6 +16,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t  size);
 size_t ft_strlcpy(char *dst, const char *src, size_t size);
 int ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
+char *ft_strchr(const char *s, int c);
 
 // ADDITIONAL
 char *ft_itoa(int n);
