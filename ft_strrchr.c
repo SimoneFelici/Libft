@@ -1,18 +1,17 @@
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	char *find;
+	char	*find;
 
-	find = NULL;	
+	find = NULL;
 	while (*s != '\0')
 	{
 		if (*s == c)
-			find = (char*)s;
+			find = (char *)s;
 		s++;
 	}
 	if (*s == c)
-		find = (char*)s;
+		find = (char *)s;
 	return (find);
-	
 }
