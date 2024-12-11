@@ -19,6 +19,7 @@ CFILES	=	ft_isalpha.c \
 			ft_strrchr.c \
 			ft_atoi.c \
 			ft_itoa.c \
+			ft_memset.c
 
 OBJS	= $(CFILES:.c=.o)
 

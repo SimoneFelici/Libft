@@ -22,7 +22,7 @@ char	*ft_itoa(int n)
 	long	num;
 
 	len = ft_numlen(n);
-	*str = (char *)malloc((len + 1) * sizeof(char));
+	str = (char *)malloc((len + 1) * sizeof(char));
 	num = n;
 	if (!str)
 		return (NULL);
