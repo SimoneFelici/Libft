@@ -11,7 +11,7 @@ First 42 Project about creating a library.
 | `ft_isascii` | Test for ASCII character. | ✅ |
 | `ft_isprint` | Check if the character is printable. | ✅ |
 | `ft_strlen`   | Find the length of the string. | ✅ |
-| `ft_memset`  | Write a byte to a byte string. | ❌ |
+| `ft_memset`  | Write a byte to a byte string. | ✅ |
 | `ft_bzero`   | Write zeroes to a byte string. | ✅ |
 | `ft_memcpy`  | Copy memory area. | ❌ |
 | `ft_memmove` | Copy byte string. | ❌ |
