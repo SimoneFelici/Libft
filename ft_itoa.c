@@ -1,80 +1,43 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: sfelici <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/10 19:18:39 by sfelici           #+#    #+#             */
-/*   Updated: 2024/12/10 19:18:41 by sfelici          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include <stdlib.h>
 
-#include "libft.h"
-
-int	find_size(int n)
+static int	ft_numlen(int n)
 {
-	int	count;
+	int	len;
 
-	count = 0;
-	if (n == 0)
-		return (1);
-	if (n < 0)
-		count++;
+	len = 0;
+	if (n <= 0)
+		len = 1;
 	while (n != 0)
 	{
+		len++;
 		n /= 10;
-		count++;
 	}
-	return (count);
-}
-
-int	find_decimals(int size)
-{
-	int	dec;
-	int	i;
-
-	dec = 1;
-	i = 0;
-	while (i < size - 1)
-	{
-		dec *= 10;
-		i++;
-	}
-	return (dec);
-}
-
-static void	fill_digits(int n, char *nbr, int decs, int *i)
-{
-	while (decs > 0)
-	{
-		nbr[(*i)++] = (n / decs) + '0';
-		n %= decs;
-		decs /= 10;
-	}
+	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	char	*nbr;
-	int		size;
-	int		i;
-	int		decs;
+	char	*str;
+	int		len;
+	long	num;
 
-	if (n == -2147483648)
-		return ("-2147483648");
-	size = find_size(n);
-	nbr = malloc((size + 1) * sizeof(char));
-	if (!nbr)
+	len = ft_numlen(n);
+	*str = (char *)malloc((len + 1) * sizeof(char));
+	num = n;
+	if (!str)
 		return (NULL);
-	i = 0;
-	decs = find_decimals(size - (n < 0));
-	if (n < 0)
+	str[len] = '\0';
+	if (num < 0)
 	{
-		nbr[i++] = '-';
-		n = -n;
+		str[0] = '-';
+		num = -num;
 	}
-	fill_digits(n, nbr, decs, &i);
-	nbr[i] = '\0';
-	return (nbr);
+	if (num == 0)
+		str[0] = '0';
+	while (num > 0)
+	{
+		str[--len] = (num % 10) + '0';
+		num /= 10;
+	}
+	return (str);
 }

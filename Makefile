@@ -5,7 +5,20 @@ CC	= cc
 CFLAGS	= -Wall -Wextra -Werror
 
 CFILES	=	ft_isalpha.c \
-		 	ft_strlen.c
+			ft_strlen.c \
+			ft_strlcpy.c \
+			ft_strlcat.c \
+			ft_isdigit.c \
+			ft_isalnum.c \
+			ft_isascii.c \
+			ft_isprint.c \
+			ft_bzero.c \
+			ft_toupper.c \
+			ft_tolower.c \
+			ft_strchr.c \
+			ft_strrchr.c \
+			ft_atoi.c \
+			ft_itoa.c \
 
 OBJS	= $(CFILES:.c=.o)
 
@@ -13,6 +26,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
+	ranlib $(NAME)
 
 clean:
 	rm -f $(OBJS)
@@ -22,4 +36,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+.PHONY: all clean fclean re
