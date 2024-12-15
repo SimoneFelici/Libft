@@ -21,7 +21,8 @@ CFILES	=	ft_isalpha.c \
 			ft_itoa.c \
 			ft_memset.c \
 			ft_memcpy.c \
-			ft_memmove.c
+			ft_memmove.c \
+			ft_strncmp.c
 
 OBJS	= $(CFILES:.c=.o)
 
