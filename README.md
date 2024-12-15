@@ -41,10 +41,10 @@ First 42 Project about creating a library.
 | `ft_itoa` | Convert integer to ASCII string. | ✅ |
 | `ft_strmapi`  | Create a new string by modifying the string with a specified function. | ❌ |
 | `ft_striteri` | Iterates through a string, enabling character and index manipulation. | ❌ |
-| `ft_putchar_fd` | Output a character to the given file. | ❌ |
-| `ft_putstr_fd`  | Output string to the given file. | ❌ |
-| `ft_putendl_fd` | Output string to given file with newline. | ❌ |
-| `ft_putnbr_fd`  | Output integer to the given file. | ❌ |
+| `ft_putchar_fd` | Output a character to the given file. | ✅ |
+| `ft_putstr_fd`  | Output string to the given file. | ✅ |
+| `ft_putendl_fd` | Output string to given file with newline. | ✅ |
+| `ft_putnbr_fd`  | Output integer to the given file. | ✅ |
 
 
 ## BONUS

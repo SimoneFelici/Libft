@@ -27,7 +27,11 @@ CFILES	=	ft_isalpha.c \
 			ft_memcmp.c \
 			ft_strnstr.c \
 			ft_calloc.c \
-			ft_strdup.c
+			ft_strdup.c \
+			ft_putchar_fd.c \
+			ft_putstr_fd.c \
+			ft_putendl_fd.c \
+			ft_putnbr_fd.c
 
 OBJS	= $(CFILES:.c=.o)
 
