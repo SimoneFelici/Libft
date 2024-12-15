@@ -34,6 +34,7 @@ void    *ft_memset(void *b, int c, size_t len);
 void	*ft_memmove (void *dest, const void *src, size_t len);
 void	*ft_memcpy(void *dest, const void *src, size_t count);
 int	ft_strncmp(const char *s1, const char *s2, size_t count);
+void	*ft_memchr(const void *buf, int c, size_t count);
 
 // ADDITIONAL
 char	*ft_itoa(int n);
