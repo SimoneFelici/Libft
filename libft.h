@@ -14,6 +14,8 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+#include <stdint.h>
+
 
 // MANDATORY
 int		ft_isalpha(int c);
@@ -38,6 +40,7 @@ void	*ft_memchr(const void *buf, int c, size_t count);
 int	ft_memcmp(const void *buf1, const void *buf2, size_t count);
 char	*ft_strnstr(const char *big,	const char *little, size_t len);
 void	*ft_calloc(size_t nitems, size_t size);
+char	*ft_strdup(const char *string);
 
 // ADDITIONAL
 char	*ft_itoa(int n);
