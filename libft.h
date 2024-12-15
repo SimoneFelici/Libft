@@ -35,6 +35,9 @@ void	*ft_memmove (void *dest, const void *src, size_t len);
 void	*ft_memcpy(void *dest, const void *src, size_t count);
 int	ft_strncmp(const char *s1, const char *s2, size_t count);
 void	*ft_memchr(const void *buf, int c, size_t count);
+int	ft_memcmp(const void *buf1, const void *buf2, size_t count);
+char	*ft_strnstr(const char *big,	const char *little, size_t len);
+void	*ft_calloc(size_t nitems, size_t size);
 
 // ADDITIONAL
 char	*ft_itoa(int n);

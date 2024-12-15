@@ -22,9 +22,9 @@ First 42 Project about creating a library.
 | `ft_strchr`   | Locate the character in the string (first occurrence). | ✅ |
 | `ft_strrchr`  | Locate the character in the string (last occurrence). | ✅ |
 | `ft_strncmp`  | Compare strings (size-bounded). | ✅ |
-| `ft_memchr`  | Locate byte in byte string. | ❌ |
-| `ft_memcmp`  | Compare byte string. | ❌ |
-| `ft_strnstr`  | Locate a substring in a string (size-bounded) | ❌ |
+| `ft_memchr`  | Locate byte in byte string. | ✅ |
+| `ft_memcmp`  | Compare byte string. | ✅ |
+| `ft_strnstr`  | Locate a substring in a string (size-bounded) | ✅ |
 | `ft_atoi` | Convert the ASCII string to an integer. | ✅ |
 | `ft_calloc`  | Memory allocation (with malloc). | ❌ |
 | `ft_strdup`  | Save a copy of a string (with malloc). | ❌ |
