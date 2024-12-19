@@ -34,7 +34,8 @@ CFILES	=	ft_isalpha.c \
 			ft_putnbr_fd.c \
 			ft_strjoin.c \
 			ft_substr.c \
-			ft_strtrim.c
+			ft_strtrim.c \
+			ft_split.c
 
 OBJS	= $(CFILES:.c=.o)
 
