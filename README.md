@@ -35,7 +35,7 @@ First 42 Project about creating a library.
 | Function | Description | Done |
 | :- | :- | :-: |
 | `ft_substr`   | Extract substring from a string. | ❌ |
-| `ft_strjoin`  | Concatenate two strings into a new string (with malloc). | ❌ |
+| `ft_strjoin`  | Concatenate two strings into a new string (with malloc). | ✅ |
 | `ft_strtrim`  | Trim the beginning and end of the string with the specified characters. | ❌ |
 | `ft_split`    | Split string, with specified character as delimiter, into an array of strings. | ❌ |
 | `ft_itoa` | Convert integer to ASCII string. | ✅ |

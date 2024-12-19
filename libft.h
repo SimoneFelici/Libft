@@ -42,6 +42,7 @@ void	*ft_calloc(size_t nitems, size_t size);
 char	*ft_strdup(const char *string);
 
 // ADDITIONAL
+char *ft_strjoin(char const *s1, char const *s2);
 char	*ft_itoa(int n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
