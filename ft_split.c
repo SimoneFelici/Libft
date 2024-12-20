@@ -1,30 +1,30 @@
 #include "libft.h"
 
-int	count_words(char const *s, char c)
+char	**ft_split(const char *s, char c)
 {
-	int	count;
-	int	w;
+	char	**array;
+	int	i;
+	int	start;
+	int	end;
 
-	count = 0;
-	w = 0;
-	while(*s)
+	i = 0;
+	while(s[i])
 	{
-		if (*s != c && count == 0)
+		if (s[i] == c)
 		{
-			w++;
-			count = 1;
+			start = i;
+			i++;
 		}
-		else if (*s == c)
-			count = 0;
-		s++;
-
+		while(s[i] != c)
+		{
+			i++;
+		}
+		if (s[i] == c)
+		{
+			end = i;
+			i++;
+		}
 	}
-	return (w);
-}
-
-char	**ft_split(char const *s, char c)
-{
-	int	words;
-
-	words = count_words(s, c);
+	array[1] = ft_substr(s, start, end - start + 1);
+	return(array);
 }
