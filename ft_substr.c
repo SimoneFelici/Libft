@@ -5,7 +5,6 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 	char	*sub;
 	size_t	i;
 
-	i = 0;
 	if (!s)
 		return (NULL);
 	if (start > ft_strlen(s))
@@ -15,6 +14,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 	sub = ft_calloc((len + 1), sizeof(char));
 	if (!sub)
 		return (NULL);
+	i = 0;
 	while(i < len  && s[start + i])
 	{
 		sub[i] = s[start + i];
