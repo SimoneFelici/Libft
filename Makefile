@@ -36,7 +36,9 @@ SOURCES	=	ft_isalpha.c \
 			ft_striteri.c
 
 BSOURCES	=	ft_lstnew.c \
-				ft_lstadd_front.c
+				ft_lstadd_front.c \
+				ft_lstsize.c \
+				ft_lstlast.c
 
 OBJECTS = $(SOURCES:.c=.o)
 BOBJECTS = $(BSOURCES:.c=.o)
