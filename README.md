@@ -58,5 +58,5 @@ First 42 Project about creating a library.
 | `ft_lstlast`      | Find the last element of the list. | ✅ |
 | `ft_lstdelone`    | Delete element from the list. | ✅ |
 | `ft_lstclear`     | Delete the sequence of elements of the list from a starting point. | ✅ |
-| `ft_lstiter`      | Apply function to the content of all list elements. | ❌ |
+| `ft_lstiter`      | Apply function to the content of all list elements. | ✅ |
 | `ft_lstmap`       | Apply function to the content of all list elements into a new list. | ❌ |
