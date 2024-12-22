@@ -1,10 +1,6 @@
-NAME	= libft.a
+NAME = libft.a
 
-CC	= cc
-
-CFLAGS	= -Wall -Wextra -Werror
-
-CFILES	=	ft_isalpha.c \
+SOURCES	=	ft_isalpha.c \
 			ft_strlen.c \
 			ft_strlcpy.c \
 			ft_strlcat.c \
@@ -39,23 +35,31 @@ CFILES	=	ft_isalpha.c \
 			ft_strmapi.c \
 			ft_striteri.c
 
-OBJS	= $(CFILES:.c=.o)
+BSOURCES	=	ft_lstnew.c
+
+OBJECTS = $(SOURCES:.c=.o)
+BOBJECTS = $(BSOURCES:.c=.o)
+
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	ar rc $(NAME) $(OBJS)
-	ranlib $(NAME)
+$(NAME): $(OBJECTS)
+	$(AR) -r $@ $?
+
+bonus: $(OBJECTS) $(BOBJECTS)
+	$(AR) -r $(NAME) $?
+
+%.o: %.c
+	$(CC) -c $(CFLAGS) $?
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJECTS) $(BOBJECTS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-.PHONY: all clean fclean re
+.PHONY: all bonus clean fclean re
