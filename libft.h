@@ -6,7 +6,7 @@
 /*   By: sfelici <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 19:20:29 by sfelici           #+#    #+#             */
-/*   Updated: 2024/12/15 18:21:26 by sfelici          ###   ########.fr       */
+/*   Updated: 2024/12/23 12:44:55 by sfelici          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 # include <unistd.h>
 # include <stdint.h>
 
-typedef struct	s_list
+typedef struct s_list
 {
-void			*content;
-struct s_list	*next;
+	void			*content;
+	struct s_list	*next;
 }				t_list;
 
 // MANDATORY

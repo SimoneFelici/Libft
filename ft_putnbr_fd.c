@@ -6,7 +6,7 @@
 /*   By: sfelici <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/15 18:12:14 by sfelici           #+#    #+#             */
-/*   Updated: 2024/12/15 18:12:15 by sfelici          ###   ########.fr       */
+/*   Updated: 2024/12/23 13:18:02 by sfelici          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,19 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*s;
-	size_t	size;
-	size_t	i;
+	long	nb;
 
-	s = ft_itoa(n);
-	size = ft_strlen(s);
-	i = 0;
-	while (i < size)
+	nb = n;
+	if (nb < 0)
 	{
-		write(fd, &s[i], 1);
-		i++;
+		write(fd, "-", 1);
+		nb *= -1;
 	}
+	if (nb > 9)
+	{
+		ft_putnbr_fd(nb / 10, fd);
+		ft_putchar_fd((nb % 10) + '0', fd);
+	}
+	else
+		ft_putchar_fd(nb + '0', fd);
 }
